@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Machine Learning vs. Deep Learning: Choosing the Right Approach</title>
+<style>
+  :root {
+    --ink: #1f2430;
+    --muted: #5b6472;
+    --accent: #2f6fed;
+    --accent-soft: #eaf1ff;
+    --border: #e3e6ea;
+    --bg: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.65;
+  }
+  header.hero {
+    padding: 56px 24px 40px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  nav.toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px 0 0;
+  }
+  nav.toc a {
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 6px 12px;
+    border-radius: 999px;
+  }
+  h1 {
+    font-size: 30px;
+    margin: 0 0 8px;
+    line-height: 1.25;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 16px;
+    margin: 0;
+  }
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 24px 64px;
+  }
+  section {
+    padding: 36px 0;
+    border-top: 1px solid var(--border);
+  }
+  section:first-of-type { border-top: none; }
+  h2 {
+    font-size: 21px;
+    margin: 0 0 14px;
+  }
+  p { margin: 0 0 14px; color: #30363f; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 8px; color: #30363f; }
+  .value-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 16px;
+  }
+  @media (max-width: 600px) {
+    .value-grid { grid-template-columns: 1fr; }
+  }
+  .value-card {
+    background: var(--accent-soft);
+    border-radius: 10px;
+    padding: 18px 20px;
+  }
+  .value-card h3 {
+    margin: 0 0 8px;
+    font-size: 15px;
+    color: var(--accent);
+  }
+  .value-card p { margin: 0; font-size: 14px; }
+  .artifact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+    padding: 10px 16px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--ink);
+    font-size: 14px;
+  }
+  .artifact-link:hover { border-color: var(--accent); }
+  footer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px 24px 56px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <h1>Machine Learning vs. Deep Learning: Choosing the Right Approach</h1>
+  <p class="subtitle">Portfolio Artifact 1 &middot; Padma Priya Arul Mozhi Varman</p>
+  <nav class="toc">
+    <a href="#introduction">Introduction</a>
+    <a href="#description">Description</a>
+    <a href="#objective">Objective</a>
+    <a href="#process">Process</a>
+    <a href="#value">Value Proposition</a>
+  </nav>
+</header>
+
+<main>
+
+  <section id="introduction">
+    <h2>Introduction</h2>
+    <p>Deep learning tends to get all the attention in AI conversations, but it isn't automatically the "better" choice just because it's newer or more complex. The right approach, machine learning or deep learning, depends entirely on the problem you're solving and the kind of data you're working with. This artifact walks through two real-world cases to show exactly how that decision plays out in practice.</p>
+  </section>
+
+  <section id="description">
+    <h2>Description</h2>
+    <p>This artifact is a written case study comparison built around two real companies: Vodafone's use of traditional machine learning to predict customer churn, and Apple's use of deep learning in Face ID. Each case includes the real-world application, why the chosen approach fits the problem, and why the opposite approach would not have worked as well.</p>
+  </section>
+
+  <section id="objective">
+    <h2>Objective</h2>
+    <p>The goal of this piece is to show, in plain language, when a simpler machine learning model is enough and when the added complexity of deep learning is actually justified. It's written so that someone without a technical background, a manager, a client, or a teammate from another department, could read it and come away understanding why two very different AI techniques exist and when each one earns its place.</p>
+  </section>
+
+  <section id="process">
+    <h2>Process</h2>
+    <p>I started by selecting one machine learning example and one deep learning example from course material, then went looking for how those techniques actually show up in the real world rather than relying on textbook descriptions alone. I verified both examples against primary sources, Google Cloud's own case study on Vodafone's churn models, and Apple's official support documentation on Face ID, so the comparison would hold up to scrutiny.</p>
+    <p>From there, I compared the two approaches across the factors that actually matter in a business setting: whether the data is already structured or raw and unstructured, how much data and computing power each approach needs, and how important it is to be able to explain a model's decision to a non-technical stakeholder. I used those same factors to explain why the opposite approach would have fallen short in each case, not just why the chosen one worked.</p>
+  </section>
+
+  <section id="value">
+    <h2>Value Proposition</h2>
+    <div class="value-grid">
+      <div class="value-card">
+        <h3>Unique Value</h3>
+        <p>I can take a technical AI concept and translate the reasoning behind it into language a business audience can act on, not just repeat back.</p>
+      </div>
+      <div class="value-card">
+        <h3>Relevance</h3>
+        <p>Teams and leaders often default to the newest or flashiest AI approach. Being able to explain when a simpler model is the smarter choice helps avoid costly, hype-driven decisions.</p>
+      </div>
+    </div>
+    <p style="margin-top:20px;">
+      <a class="artifact-link" href="ML_vs_DL_Case_Study_APA.docx">📄 View the full case study report (Word document)</a>
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  Portfolio artifact for DTAN-500: Foundations of Data Analytics.
+</footer>
+
+</body>
+</html>
