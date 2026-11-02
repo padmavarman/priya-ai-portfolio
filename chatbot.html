@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DSO Daddy — Padma Priya Arul Mozhi Varman</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #221d1c;
+    --header-bg: #1c1818;
+    --muted: #6f6360;
+    --rose: #f6e2e0;
+    --maroon: #8c3348;
+    --maroon-dark: #6e2638;
+    --border: #ece0df;
+    --white: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: var(--ink);
+    background: var(--white);
+    line-height: 1.75;
+  }
+
+  header.topbar {
+    background: var(--header-bg);
+    color: #fff;
+    padding: 18px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand .mark {
+    width: 40px; height: 40px;
+    border: 1.5px solid rgba(255,255,255,0.5);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+  }
+  .brand .name { font-family: 'Playfair Display', serif; font-size: 17px; letter-spacing: .02em; }
+  .brand .tag { font-size: 10px; letter-spacing: .14em; color: rgba(255,255,255,0.6); text-transform: uppercase; margin-top: 2px; }
+  nav.topnav { display: flex; gap: 30px; flex-wrap: wrap; }
+  nav.topnav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 14px; font-weight: 500; }
+  nav.topnav a.active, nav.topnav a:hover { color: #fff; border-bottom: 1px solid var(--maroon); padding-bottom: 2px; }
+
+  .hero { background: var(--rose); padding: 64px 32px 56px; text-align: center; }
+  .hero-inner { max-width: 700px; margin: 0 auto; }
+  .eyebrow { font-size: 12.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--maroon-dark); margin-bottom: 18px; }
+  h1.display {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: clamp(28px, 4.6vw, 42px);
+    margin: 0 0 18px;
+    line-height: 1.2;
+  }
+  .divider { margin: 0 auto 18px; width: 150px; color: var(--maroon); opacity: .85; }
+  .byline { font-size: 14px; color: var(--muted); margin: 0 0 28px; max-width: 520px; margin-left: auto; margin-right: auto; }
+
+  .cta-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 13px 26px; font-size: 14px; font-weight: 600; text-decoration: none; border-radius: 2px; }
+  .btn.solid { background: var(--maroon); color: #fff; }
+  .btn.solid:hover { background: var(--maroon-dark); }
+  .btn.outline { border: 1px solid var(--ink); color: var(--ink); background: transparent; }
+  .btn.outline:hover { background: var(--ink); color: #fff; }
+
+  main { max-width: 700px; margin: 0 auto; padding: 56px 32px 20px; }
+
+  article { margin-bottom: 44px; }
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin: 0 0 14px;
+  }
+  .underline { width: 28px; height: 2px; background: var(--maroon); margin: 0 0 16px; }
+  p { margin: 0 0 15px; color: #3a3130; font-size: 16px; }
+
+  .topic-list { margin: 0 0 4px; padding-left: 20px; }
+  .topic-list li { margin-bottom: 8px; font-size: 15px; color: #3a3130; }
+
+  .disclaimer-box {
+    border-left: 3px solid var(--maroon);
+    background: var(--rose);
+    padding: 16px 20px;
+    font-size: 14px;
+    color: var(--maroon-dark);
+    margin: 0 0 8px;
+  }
+
+  footer { background: var(--header-bg); color: rgba(255,255,255,0.65); text-align: center; padding: 24px; font-size: 13px; }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <div>
+      <div class="name">Padma Priya</div>
+      <div class="tag">AI / ML Portfolio</div>
+    </div>
+  </div>
+  <nav class="topnav">
+    <a href="index.html">Home</a>
+    <a href="evolution-of-ai.html">Evolution of AI</a>
+    <a href="chatbot.html" class="active">Chatbot</a>
+    <a href="ml-vs-dl.html">ML vs. DL</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Portfolio Artifact &middot; Group Project</div>
+    <h1 class="display">DSO Daddy: An AI Agent for International Student Support</h1>
+    <p class="byline">A team project with Group 3, built in the AI Lab, an AI agent that answers DSO-related questions for international students at Indiana Wesleyan University.</p>
+    <div class="cta-row">
+      <a class="btn solid" href="https://iwu-chatbot.lovable.app" target="_blank" rel="noopener">Try DSO Daddy</a>
+    </div>
+  </div>
+</div>
+
+<main>
+
+  <article>
+    <h2>About This Artifact</h2>
+    <div class="underline"></div>
+    <p>My team and I built DSO Daddy after realizing how many of us had personally dealt with the confusion of navigating international student visa questions. We wanted to create something that could help other students get quick, reliable answers about DSO-related topics like CPT, OPT, H-1B, F-1 visas, and Green Cards, starting with student visa questions before expanding into work visa topics.</p>
+    <p>We tested several AI platforms, including ChatGPT, Claude, and Copilot, comparing how each handled the same prompts before settling on Lovable to actually build the app. We told Lovable we were building this for Indiana Wesleyan University, and it pulled information directly from the university's own websites to ground DSO Daddy's answers.</p>
+  </article>
+
+  <article>
+    <h2>What DSO Daddy Can Help With</h2>
+    <div class="underline"></div>
+    <ul class="topic-list">
+      <li>Travel documents and signatures needed for OPT</li>
+      <li>When F-1 students can enter the U.S. before their program start date</li>
+      <li>How an F-1 transfer between SEVP-certified schools works</li>
+      <li>General DSO responsibilities, like issuing the I-20, advising on status rules, and approving work authorization</li>
+    </ul>
+    <div class="disclaimer-box">
+      DSO Daddy is not a substitute for legal advice. Students are always encouraged to confirm answers with their actual DSO or an immigration attorney.
+    </div>
+  </article>
+
+</main>
+
+<footer>Portfolio artifact for DTAN-500: Foundations of Data Analytics</footer>
+
+</body>
+</html>
